@@ -1,3 +1,6 @@
 # Conditional Execution
-
-hrs = input("Enter hours? ")
+try
+  hrs = float(input("Enter hours: "))
+  rate=float(input("enter rate:"))
+  if(hrs>40)
+    
