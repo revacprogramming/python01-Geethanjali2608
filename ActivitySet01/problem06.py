@@ -1,6 +1,6 @@
 # Loops & Iterators
 
-x=float(input("Enter score:"))
+'''x=float(input("Enter score:"))
 if x>=0.9:
     print("A")
 elif x>=0.8 and x<0.9:
@@ -12,8 +12,9 @@ elif x>=0.6 and x<0.7:
 elif x<0.6:
     print("F")
 else:
-    print("invaid input")
-    
+    print("invaid input")'''
+
+
 '''while True:
     print("loop")
     line=input('>')
@@ -32,9 +33,15 @@ print("program terminated")'''
     print(line)
 print('Done!')'''
 
-'''friends = ['Joseph', 'Glenn', 'Sally']
-for a in friends:
-    print('Happy New Year:', a)
-print('Done!')'''
 
 
+def computepay(hrs,rate):
+    if hrs>40:
+        pay=40*rate+(hrs-40)*rate*1.5
+    else:
+        pay=hrs*rate
+    return pay
+hrs=float(input("enter hours:"))
+rate=float(input("enter rate:"))
+pay=computepay(hrs,rate)
+print(pay)
